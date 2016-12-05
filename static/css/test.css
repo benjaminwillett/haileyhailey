@@ -1,0 +1,587 @@
+
+[id="header"] {
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+[id="header"] h1 {
+    text-align: center;
+    background-color: red;
+    -moz-border-radius-topright: 20em;
+    border-style: solid;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+[id="header"] h3 {
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-style: solid;
+    background-color: red;
+}
+
+[id="footer"] {
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+[id="footer"] h1 {
+
+    text-align: center;
+    background-color: red;
+    border-style: solid;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+[id="footer"] h3 {
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-style: solid;
+    background-color: red;
+}
+
+[id="nav"] {
+    background-color: red;
+    border-style: solid;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+    list-style-type: none;
+
+}
+
+[id="nav"] ul:hover {
+    list-style-type: none;
+    color: white;
+
+}
+
+[id="nav"] li:hover {
+    list-style-type: none;
+    color: white;
+
+}
+
+[id="nav"] ul{
+    list-style-type: none;
+
+}
+
+[id="nav"] li{
+    list-style-type: none;
+
+}
+
+[id="LOGOUT"] {
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    display: block;
+    text-align: right;
+    list-style-type: none;
+
+}
+
+[id="LOGOUT"] H2:hover{
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    display: block;
+    text-align: right;
+    list-style-type: none;
+
+}
+
+[id="UL-TITLE"] {
+    background-color: black;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    height: 10%;
+    list-style-type: none;
+}
+
+[id="section1"] ul {
+    list-style-type: square;
+    background-color: black;
+}
+
+[id="section1"] li{
+    background-color: whitesmoke;
+    border-bottom: 1px solid #f9f9f9;
+    border-top: 1px solid #f9f9f9;
+    border-bottom-color: inherit;
+    border-top-color: inherit;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 10%;
+}
+
+[id="section1"] li:hover {
+    background-color: lightgrey;
+    border-bottom: 1px solid #f9f9f9;
+    border-top: 1px solid #f9f9f9;
+    border-bottom-color: inherit;
+    border-top-color: inherit;
+    color: red;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 10%;
+}
+
+
+[id="NAME"] {
+    width: 15%;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    margin: auto;
+    border: none;
+}
+
+[id="NAME-TITLE"] {
+    width: 15%;
+    display: inline-block;
+    color: white;
+    font-size: large;
+    margin: auto;
+    background-color: black;
+    text-align: center;
+    border: solid;
+}
+
+[id="IP"] {
+    width: 12.5%;
+    float: left;
+    color: black;
+    font-size: small;
+    margin: auto;
+}
+
+[id="IP-TITLE"] {
+    width: 12.5%;
+    float: left;
+    color: white;
+    font-size: large;
+    margin: auto;
+    background-color: black;
+    text-align: center;
+    border: solid;
+}
+
+[id="EMAIL"] {
+    width: 25%;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    margin: auto;
+}
+
+[id="EMAIL-TITLE"] {
+    width: 25%;
+    display: inline-block;
+    color: white;
+    font-size: large;
+    margin: auto;
+    background-color: black;
+    text-align: center;
+    border: none;
+}
+
+[id="ENABLE"] {
+    width: 15%;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    margin: auto;
+}
+
+
+[id="ENABLE-TITLE"] {
+    width: 15%;
+    display: inline-block;
+    color: white;
+    font-size: large;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    border:none;
+}
+
+[id="STATUS"] {
+    width: 10%;
+    display: inline-block;
+    text-align: left;
+    color: red;
+    background-color: yellow;
+    font-size: small;
+    margin: auto;
+}
+
+[id="STATUS-TITLE"] {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: large;
+    margin: auto;
+    border: none;
+}
+
+[id="STATUSCHECKED"] {
+    width: 10%;
+    display: inline-block;
+    text-align: left;
+    color: black;
+    background-color: lawngreen;
+    font-size: small;
+    margin: auto;
+}
+
+[id="STATUS-MESSAGE"] {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    color: red;
+    background-color: yellow;
+    font-size: small;
+    margin: auto;
+}
+
+
+[id="BACKUP-STATUS-TITLE"] {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: large;
+    margin: auto;
+    border: none;
+}
+
+[id="MESSAGE-SENT"] {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    background-color: lawngreen;
+    font-size: small;
+    margin: auto;
+}
+
+[id="BACKUP-FAILED"] {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    background-color: red;
+    font-size: small;
+    margin: auto;
+}
+
+[id="STATUS-EMAIL"] {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    color: red;
+    background-color: yellow;
+    font-size: small;
+    margin: auto;
+}
+
+[id="STATUS-EMAIL-TITLE"] {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: large;
+    margin: auto;
+    border: none;
+}
+
+[id="EMAIL-SENT"] {
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    background-color: lawngreen;
+    font-size: small;
+    margin: auto;
+}
+
+[id="section1"] {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height:30px;
+    width: 90%;
+    height:auto;
+    padding:10px;
+    background-color: black;
+    border-style: solid;
+    color: red;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+}
+
+
+[id="section1"] h1 {
+    text-align: center;
+    color: red;
+}
+
+[id="section1"] h2 {
+    text-align: center;
+    color: red;
+}
+
+[id="section2"] {
+    margin: auto;
+    line-height:30px;
+    width: 90%;
+    height:50%;
+    padding:10px;
+    background-color: forestgreen;
+    border-style: solid;
+    color: red;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+}
+
+[id="section2"] h1 {
+    text-align: center;
+    color: red;
+}
+
+[id="MESSAGEBOX"] {
+    font-size: large;
+    color: black;
+    font-weight: bold;
+}
+
+[id="BUTTON"] {
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    margin-left: 95%;
+}
+
+[id="section2"] h2 {
+    text-align: center;
+    color: red;
+}
+
+[id="LOGIN"] {
+    display: inline-block;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+[id="NEW-USER"] {
+    display: inline-block;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+[id="NEW-USER"] ul{
+    display: inline-block;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+[id="NEW-USER"] li{
+    display: inline-block;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+[id="ADMIN-EMAIL"] {
+    width: 20%;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    margin: auto;
+    border: none;
+}
+
+[id="ADMIN-PASSWORD"] {
+    width: 20%;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    margin: auto;
+    border: none;
+}
+
+[id="ADMIN-FIRSTNAME"] {
+    width: 20%;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    margin: auto;
+    border: none;
+}
+
+[id="ADMIN-TOWN"] {
+    width: 25%;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    margin: auto;
+    border: none;
+}
+
+[id="ADMIN-DELETE"] {
+    width: 10%;
+    display: inline-block;
+    color: black;
+    font-size: small;
+    margin: 2px;
+    border: none;
+}
+
+ /* Dropdown Button */
+.dropbtn {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: red;
+    font-weight: bold;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: yellow;
+    color: black;
+}
+
+[id="SWITCH-HEAD"] {
+    font-size: x-large;
+    background: darkgrey;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 5%;
+}
+
+[id="SWITCH-COLUMN1"] {
+    float: left;
+    width: 25%;
+    margin: 5%;
+    background: white;
+    border: double;
+    border-color: green;
+}
+
+[id="SWITCH-COLUMN2"] {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    margin: 5%;
+    background: white;
+    border: double;
+    border-color: red;
+}
+
+[id="SWITCH-OK"] {
+    display: inline-block;
+    float: none;
+    font-size: large;
+    background: green;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+[id="SWITCH-NOTOK"] {
+    display: inline-block;
+    float: none;
+    font-size: large;
+    background: red;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    list-style-type: none;
+}

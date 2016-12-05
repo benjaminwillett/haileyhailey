@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="/static/css/test.css">
+    <meta charset="UTF-8">
+    <title>Capacity Dashboard</title>
+</head>
+<body>
+<div>
+    <h1 id="SWITCH-HEAD">Switch port capacity reporting</h1>
+</div>
+<div id="SWITCH-COLUMN1">
+<div>
+
+        {% for each in P %}
+            {% if each.ports > SIZE %}
+    <ul >
+
+      <li>
+
+          <div id="SWITCH-OK"> {{ each.name }} has {{ each.ports }} ports available Its OK
+          </div>
+
+
+      </li>
+
+    </ul>
+    {% endif %}
+    {% endfor %}
+</div>
+</div>
+
+<div id="SWITCH-COLUMN2">
+<div>
+
+        {% for each in P %}
+            {% if each.ports <= SIZE %}
+    <ul >
+
+      <li>
+
+          <div id="SWITCH-NOTOK"> {{ each.name }} has only {{ each.ports }} ports available!
+          </div>
+
+
+      </li>
+
+    </ul>
+    {% endif %}
+    {% endfor %}
+</div>
+</div>
+
+</body>
+</html>

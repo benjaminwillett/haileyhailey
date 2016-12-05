@@ -1,0 +1,44 @@
+{% include "header.html" %}
+{% include "nav.html" %}
+
+<div id="header">
+    <p><h3>Admin Console</h3>
+    <p><h5>Here you can change user password, and enable/disable users</h5>
+
+</div>
+
+<div id="section1">
+
+    <ul id="UL-TITLE">
+        <li id="UL-TITLE">
+            <div id="NAME-TITLE">Username</div>
+            <div id="IP-TITLE">Password</div>
+
+        </li>
+    </ul>
+        <form action="/deleteadmin" method="post">
+        {% for index in range(USERS['EMAIL']|count) %}
+    <ul>
+
+      <li>
+          <div id="ADMIN-EMAIL">  - {{ USERS['EMAIL'][index] }} </div>
+          <div id="ADMIN-PASSWORD">  - {{ USERS['PASSWORD'][index] }} </div>
+          <div id="ADMIN-FIRSTNAME">  - {{ USERS['FIRSTNAME'][index] }} {{ USERS['SURNAME'][index] }} </div>
+          <div id="ADMIN-TOWN">  - {{ USERS['TOWN'][index] }} {{ USERS['COUNTRY'][index] }} {{ USERS['POSTCODE'][index] }}</div>
+          <div id="ADMIN-DELETE">     <input type="submit" value="{{ USERS['EMAIL'][index] }}" name="DELETE"></div>
+
+
+      </li>
+
+    </ul>
+        {% endfor %}
+    </form>
+
+</div>
+
+{%include "footer.html"%}
+
+
+
+
+

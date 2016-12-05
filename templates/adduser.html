@@ -1,0 +1,50 @@
+{%include "header.html"%}
+
+<form action="/submituser" method="post" xmlns="http://www.w3.org/1999/html">
+
+    <div id="NEW-USER">
+    <ul >
+
+      <li>
+        <li>email/username: <input type="text" maxlength="50" name="EMAIL"></li>
+
+        <li>Firstname: <input type="text" maxlength="25" name="FIRSTNAME"></li>
+
+        <li>Surname: <input type="text" maxlength="25" name="SURNAME"></li>
+
+        <li>Password: <input type="password" maxlength="25" name="PASSWORD"></li>
+
+        <li>Age: <input type="number" maxlength="3" name="AGE"></li>
+
+        <li>Gender:
+            <ul>
+                <li>
+                    <input type="radio" name="GENDER" value="MALE">Male<br>
+                </li>
+                <li>
+                    <input type="radio" name="GENDER" value="FEMALE">Female<br>
+                </li>
+            </ul>
+        </li>
+
+        <li>Town: <input type="text" name="TOWN"></li>
+
+        <li>Country: <select name="COUNTRY">
+            <option>Australia</option>
+            <option>UK</option>
+            <option>NZ</option>
+            <option>France</option>
+            <option>Spain</option>
+            <option>Holland</option>
+        </select></li>
+
+        <li>Postcode: <input type="text" name="POSTCODE"></li>
+
+        <input type="submit" value="Create User">
+
+        </ul>
+    </div>
+</form>
+
+{%include "footer.html"%}
+

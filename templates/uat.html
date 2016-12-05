@@ -1,0 +1,69 @@
+{% include "header.html" %}
+{% include "nav.html" %}
+
+<div id="header">
+    <p><h3>Background</h3>
+    <p><h5>This tool has been created to backup DET device configurations.
+    It is a Telnet/SSH backup tool that allows the user to import a list of devices and take scheduled backups of these.
+    If a backup is unsuccessful the device owner will be notified by either sms or email.
+    This software is the property of Techcamp, if support is required please <a href="mailto:benw@techcamp.com.au">Email Me</a></h5>
+    <p><h5>Your device file needs to be saved exactly as the device template here: <button type="submit" onclick="window.open('/Users/benwillett/Desktop/ITWork/DET/UAT/devices.xlsx')">Download</button></h5>
+
+</div>
+
+<div id="section1">
+            <form action="/fileimport" method="post">
+    <p><h5><input type="file" name="IMPORT"><input type="submit" value="Import"></h5>
+    </form>
+<form action="/message" method="post">
+    <ul id="UL-TITLE">
+        <li id="UL-TITLE">
+            <div id="NAME-TITLE">NAME</div>
+            <div id="IP-TITLE">IP</div>
+            <div id="ENABLE-TITLE">ENABLE</div>
+            <div id="BACKUP-STATUS-TITLE">BACKUP</div>
+            <div id="EMAIL-TITLE">EMAIL</div>
+            <div id="STATUS-EMAIL-TITLE">STATUS</div>
+        </li>
+    </ul>
+        {% for each in P %}
+    <ul >
+
+      <li>
+          <div id="NAME"> <i class="fa fa-desktop fa-lg" aria-hidden="true"></i> - {{ each.name }} </div>
+
+          <div id="IP">  - {{ each.ip }} <i class="fa fa-fw fa-lg" aria-hidden="true"></i></div>
+
+          <div id="ENABLE"> <input type="checkbox" name="ENABLE" value="{{ each.ip }}" /> Backup <i class="fa fa-hdd-o fa-lg" aria-hidden="true"></i></div>
+
+          <div  {% if each.ip in (Y['backupFailed']) %} id="BACKUP-FAILED">
+                {% elif each.ip not in (Y['messageSent']) %} id="STATUS-MESSAGE">
+                {% else %} id="MESSAGE-SENT">
+                {% endif %}
+                {% if each.ip in (Y['backupFailed']) %} Failed <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                {% elif each.ip not in (Y['messageSent']) %} Not Sent
+                {% else %} Sent <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+                {% endif %}</div>
+
+          <div id="EMAIL"> <input type="checkbox" name="EMAIL" value="{{ each.email }}" /> <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+              {{ each.email }}</div>
+
+          <div {% if each.email not in (Y['emailSent']) %} id="STATUS-EMAIL"> {% else %} id="EMAIL-SENT">
+                {% endif %}
+                <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                {% if each.email not in (Y['emailSent']) %} Not Sent
+                {% else %} Sent <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+          {% endif %}</div>
+
+      </li>
+
+    </ul>
+    {% endfor %}
+<input id="BUTTON" type="submit" value="Run" name="submit">
+
+</div>
+
+{% include "footer.html" %}
+
+
+
