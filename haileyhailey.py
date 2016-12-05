@@ -595,4 +595,5 @@ def dashboard2():
 
 if __name__ == '__main__':
     manager.run()
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 33507))
+    app.run(debug=True, port=port)
