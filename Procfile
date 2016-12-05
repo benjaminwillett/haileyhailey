@@ -1,1 +1,1 @@
-web: gunicorn haileyhailey.haileyhailey:app
+web: gunicorn haileyhailey:app
