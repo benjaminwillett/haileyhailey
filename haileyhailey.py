@@ -97,7 +97,7 @@ users['TOWN'] = []
 users['COUNTRY'] = []
 users['POSTCODE'] = []
 usersFile = "users.xlsx"
-userFilePath = "/Users/benwillett/Desktop/ITWork/DET/UAT/"
+userFilePath = "/haileyhailey/"
 
 try:
     message = "importing users from spreadsheet"
