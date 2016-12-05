@@ -107,7 +107,7 @@ try:
     usersWb = openpyxl.load_workbook(userFilePath + usersFile)
     print"loaded"
     usersSheet = usersWb.get_sheet_by_name("Sheet 1")
-    print"sheet 1"
+    print"sheet 1 loaded"
 except:
     message = "could not import users from spreadsheet"
     time.sleep(1)
