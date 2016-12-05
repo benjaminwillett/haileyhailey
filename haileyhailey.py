@@ -19,7 +19,6 @@ import smtplib
 import re
 import string
 from colours import colour
-from celery import Celery
 import os
 import threading
 from database import Routers,db,Users,Devices
