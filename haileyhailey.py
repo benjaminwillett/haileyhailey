@@ -98,6 +98,7 @@ users['COUNTRY'] = []
 users['POSTCODE'] = []
 usersFile = "users.xlsx"
 userFilePath = ""
+usersSheet = ""
 
 try:
     message = "importing users from spreadsheet"
