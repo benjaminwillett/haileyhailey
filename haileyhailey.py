@@ -114,7 +114,7 @@ except:
 
 
 userRowCount = 0
-columnA = usersSheet.columns[0]
+columnA = usersSheet.columns
 row2 = next(columnA, None)
 print(row2)
 columnB = usersSheet.columns[1]
