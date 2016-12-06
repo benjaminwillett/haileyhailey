@@ -117,50 +117,11 @@ userRowCount = 0
 alpha = ["A","B","C","D","E","F","G"]
 for vertical in usersSheet.columns:
     column = vertical[userRowCount]
-    print(column.value)
-    userRowCount = +1
-
-# print(usersSheet.columns[0])
-# print("that was the userSheet printing")
-# columnAA = next(columna, None)
-# print(columnAA)
-# columnA = columnAA[0]
-# print(columnA)
-# print(str(columnA.value))
+    columnA = column
+    print(columnA.value)
+    userRowCount = userRowCount +1
 
 
-
-columnb = usersSheet.columns
-columnBB = next(columnb, None)
-columnB = columnBB[1]
-
-columnc = usersSheet.columns
-columnCC = next(columnc, None)
-columnC = columnCC[2]
-
-columnd = usersSheet.columns
-columnDD = next(columnd, None)
-columnD = columnDD[3]
-
-columne = usersSheet.columns
-columnEE = next(columne, None)
-columnE = columnEE[4]
-
-columnf = usersSheet.columns
-columnFF = next(columnf, None)
-columnF = columnFF[5]
-
-columng = usersSheet.columns
-columnGG = next(columng, None)
-columnG = columnGG[6]
-
-columnh = usersSheet.columns
-columnHH = next(columnh, None)
-columnH = columnHH[7]
-
-columni = usersSheet.columns
-columnII = next(columni, None)
-columnI = columnII[8]
 
 for i in range(0, usersSheet.max_row):
     if (str(columnA[userRowCount].value)) == "None":
