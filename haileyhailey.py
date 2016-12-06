@@ -114,18 +114,41 @@ except:
 
 
 userRowCount = 0
-columnA = usersSheet.columns
-row2 = next(columnA, None)
-print(row2)
-columnB = usersSheet.columns[1]
-columnC = usersSheet.columns[2]
-columnD = usersSheet.columns[3]
-columnE = usersSheet.columns[4]
-columnF = usersSheet.columns[5]
-columnG = usersSheet.columns[6]
-columnH = usersSheet.columns[7]
-columnI = usersSheet.columns[8]
+columna = usersSheet.columns
+columnAA = next(columna, None)
+columnA = columnAA[0]
 
+columnb = usersSheet.columns
+columnBB = next(columnb, None)
+columnB = columnBB[1]
+
+columnc = usersSheet.columns
+columnCC = next(columnc, None)
+columnC = columnCC[2]
+
+columnd = usersSheet.columns
+columnDD = next(columnd, None)
+columnD = columnDD[3]
+
+columne = usersSheet.columns
+columnEE = next(columne, None)
+columnE = columnEE[4]
+
+columnf = usersSheet.columns
+columnFF = next(columnf, None)
+columnF = columnFF[5]
+
+columng = usersSheet.columns
+columnGG = next(columng, None)
+columnG = columnGG[6]
+
+columnh = usersSheet.columns
+columnHH = next(columnh, None)
+columnH = columnHH[7]
+
+columni = usersSheet.columns
+columnII = next(columni, None)
+columnI = columnII[8]
 
 for i in range(0, usersSheet.max_row):
     if (str(columnA[userRowCount].value)) == "None":
