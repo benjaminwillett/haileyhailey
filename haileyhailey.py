@@ -114,8 +114,10 @@ except:
 
 
 userRowCount = 0
-for each in usersSheet.columns(0):
-    print each
+alpha = [A,B,C,D,E,F,G]
+for vertical in usersSheet.columns:
+    column = vertical[userRowCount]
+    print(column)
 # print(usersSheet.columns[0])
 # print("that was the userSheet printing")
 # columnAA = next(columna, None)
