@@ -114,7 +114,7 @@ except:
 
 
 userRowCount = 0
-alpha = [A,B,C,D,E,F,G]
+alpha = ["A","B","C","D","E","F","G"]
 for vertical in usersSheet.columns:
     column = vertical[userRowCount]
     print(column)
