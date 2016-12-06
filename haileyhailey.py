@@ -117,50 +117,50 @@ except:
 userRowCount = 0
 for vertical in usersSheet.columns:
     columnA = vertical[0]
-    print(columnA.value)
+    print("columnA = " + columnA.value)
     break
 
 for vertical in usersSheet.columns:
     columnB = vertical[1]
-    print(columnB.value)
+    print("columnB = " + columnB.value)
     break
 
 for vertical in usersSheet.columns:
     columnC = vertical[2]
-    print(columnC.value)
+    print("columnC = " + columnC.value)
     break
 
 
 for vertical in usersSheet.columns:
     columnD = vertical[3]
-    print(columnD.value)
+    print("columnD = " + columnD.value)
     break
 
 
 for vertical in usersSheet.columns:
     columnE = vertical[4]
-    print(columnE.value)
+    print("columnE = " + columnE.value)
     break
 
 for vertical in usersSheet.columns:
     columnF = vertical[5]
-    print(columnF.value)
+    print("columnF = " + columnF.value)
     break
 
 for vertical in usersSheet.columns:
     columnG = vertical[6]
-    print(columnG.value)
+    print("columnG = " + columnG.value)
     break
 
 for vertical in usersSheet.columns:
     columnH = vertical[7]
-    print(columnH.value)
+    print("columnH = " + columnH.value)
     break
 
 
 for vertical in usersSheet.columns:
     columnI = vertical[8]
-    print(columnI.value)
+    print("columnI = " + columnI.value)
     break
 
 
