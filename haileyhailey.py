@@ -113,13 +113,55 @@ except:
     time.sleep(1)
 
 
+
 userRowCount = 0
-alpha = ["A","B","C","D","E","F","G"]
 for vertical in usersSheet.columns:
-    column = vertical[userRowCount]
-    columnA = column
+    columnA = vertical[0]
     print(columnA.value)
-    userRowCount = userRowCount +1
+    break
+
+for vertical in usersSheet.columns:
+    columnB = vertical[1]
+    print(columnB.value)
+    break
+
+for vertical in usersSheet.columns:
+    columnC = vertical[2]
+    print(columnC.value)
+    break
+
+
+for vertical in usersSheet.columns:
+    columnD = vertical[3]
+    print(columnD.value)
+    break
+
+
+for vertical in usersSheet.columns:
+    columnE = vertical[4]
+    print(columnE.value)
+    break
+
+for vertical in usersSheet.columns:
+    columnF = vertical[5]
+    print(columnF.value)
+    break
+
+for vertical in usersSheet.columns:
+    columnG = vertical[6]
+    print(columnG.value)
+    break
+
+for vertical in usersSheet.columns:
+    columnH = vertical[7]
+    print(columnH.value)
+    break
+
+
+for vertical in usersSheet.columns:
+    columnI = vertical[8]
+    print(columnI.value)
+    break
 
 
 
