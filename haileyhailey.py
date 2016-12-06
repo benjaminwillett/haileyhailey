@@ -114,7 +114,7 @@ except:
 
 
 userRowCount = 0
-columna = usersSheet.columns
+columna = usersSheet.columns[0]
 print(columna)
 columnAA = next(columna, None)
 print(columnAA)
