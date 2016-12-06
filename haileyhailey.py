@@ -114,13 +114,15 @@ except:
 
 
 userRowCount = 0
-print(usersSheet.columns[0])
-print("that was the userSheet printing")
-columnAA = next(columna, None)
-print(columnAA)
-columnA = columnAA[0]
-print(columnA)
-print(str(columnA.value))
+for each in usersSheet.columns:
+    print each
+# print(usersSheet.columns[0])
+# print("that was the userSheet printing")
+# columnAA = next(columna, None)
+# print(columnAA)
+# columnA = columnAA[0]
+# print(columnA)
+# print(str(columnA.value))
 
 
 
