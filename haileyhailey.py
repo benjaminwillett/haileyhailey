@@ -118,6 +118,7 @@ alpha = ["A","B","C","D","E","F","G"]
 for vertical in usersSheet.columns:
     column = vertical[userRowCount]
     print(column.value)
+    userRowCount = +1
 
 # print(usersSheet.columns[0])
 # print("that was the userSheet printing")
