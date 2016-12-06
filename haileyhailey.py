@@ -118,7 +118,7 @@ columna = usersSheet.columns
 columnAA = next(columna, None)
 columnA = columnAA[0]
 print(columnA)
-print(str(columnA.value))
+print(str(columnA[1].value))
 
 columnb = usersSheet.columns
 columnBB = next(columnb, None)
