@@ -114,7 +114,7 @@ except:
 
 
 userRowCount = 0
-for each in usersSheet.columns:
+for each in usersSheet.columns(0):
     print each
 # print(usersSheet.columns[0])
 # print("that was the userSheet printing")
