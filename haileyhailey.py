@@ -117,6 +117,7 @@ userRowCount = 0
 columna = usersSheet.columns
 columnAA = next(columna, None)
 columnA = columnAA[0]
+print(columnA)
 
 columnb = usersSheet.columns
 columnBB = next(columnb, None)
