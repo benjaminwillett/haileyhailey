@@ -117,7 +117,8 @@ userRowCount = 0
 alpha = ["A","B","C","D","E","F","G"]
 for vertical in usersSheet.columns:
     column = vertical[userRowCount]
-    print(column)
+    print(column.value)
+
 # print(usersSheet.columns[0])
 # print("that was the userSheet printing")
 # columnAA = next(columna, None)
