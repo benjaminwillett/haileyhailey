@@ -115,10 +115,14 @@ except:
 
 userRowCount = 0
 columna = usersSheet.columns
+print(columna)
 columnAA = next(columna, None)
+print(columnAA)
 columnA = columnAA[0]
 print(columnA)
-print(str(columnA[1].value))
+print(str(columnA.value))
+
+
 
 columnb = usersSheet.columns
 columnBB = next(columnb, None)
