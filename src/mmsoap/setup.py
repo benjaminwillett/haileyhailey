@@ -11,7 +11,7 @@ setup(
     description='This library provides a simple interface for sending and receiving messages using the MessageMedia SOAP API.',
     long_description=open('README.md').read(),
     install_requires=[
-        "suds==0.4.0",
+        "suds==1.0.0",
     ],
     tests_require=[
     ],
